@@ -6,12 +6,9 @@ export const Layout = () => {
 
 
     return(
-        <div className='app-container'>
-            <div className='document-container'>
+        <div className='app-wrapper'>
+            <div className='document-wrapper'>
                 <DocumentPane />
-            </div>
-            <div className='board-container'>
-                <Board />
             </div>
         </div>
     )

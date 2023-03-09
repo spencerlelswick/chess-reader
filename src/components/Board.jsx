@@ -1,11 +1,11 @@
-const boardImg = require('../assets/board.png')
 
-export const Board = () => {
+
+export const Board = (props) => {
 
     return(
-        <>
-            <img src={boardImg} /> 
-        </>
+        <div className='board-container'>
+            <img src={props.currentBoard} /> 
+        </div>
     )
 }
 
