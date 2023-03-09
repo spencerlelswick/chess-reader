@@ -3,10 +3,7 @@ import './AnnotationLayer.css';
 import './TextLayer.css';
 import { Document, Page, pdfjs } from "react-pdf";
 import './DocumentPane.css'
-import logo from '../assets/logo.png'
-import Board from './Board';
 
-const boardImg = require('../assets/board.png')
 
 const options = {
   cMapUrl: 'cmaps/',
@@ -21,7 +18,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
   
   const [file, setFile] = useState('./TEST2.pdf');
   const [numPages, setNumPages] = useState(null);
-  const [currentBoard, setCurrentBoard] = useState(boardImg)
 
   function onFileChange(event) {
     setFile(event.target.files[0]);
@@ -45,9 +41,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
         </div>
       </header>
       
-      <div className='board-wrapper'>
-        <Board currentBoard={currentBoard}/>
-      </div>
+      
       <div className="Document__container">
         
         <div className="Document__container__document">

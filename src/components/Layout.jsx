@@ -10,6 +10,9 @@ export const Layout = () => {
             <div className='document-wrapper'>
                 <DocumentPane />
             </div>
+        <div className='board-wrapper'>
+            <Board/>
+        </div>
         </div>
     )
 }

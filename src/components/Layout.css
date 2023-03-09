@@ -12,8 +12,6 @@
 
 
 .board-wrapper {
-    right: 0;
-    position: fixed;
-    background-color: gray;
-    height: 100vh;
+    grid-column: 3/3;
+
 }
